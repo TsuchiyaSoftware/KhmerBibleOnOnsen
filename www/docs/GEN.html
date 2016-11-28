@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="js/zepto.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <ons-navigator id="myNav" page="home.html"></ons-navigator>
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-list>
+          <ons-list-item onclick="fn.load('home.html')" tappable>
+            Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('settings.html')" tappable>
+            Settings
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('about.html')" tappable>
+            About
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+
+  <ons-template id="home.html">
+    <ons-page id="home-page">
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          KhmerBible
+        </div>
+      </ons-toolbar>
+      <ons-row>
+<ons-button class="chapter" onclick="fn.navigate('GEN00.html')" >០</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN01.html')" >១</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN02.html')" >២</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN03.html')" >៣</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN04.html')" >៤</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN05.html')" >៥</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN06.html')" >៦</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN07.html')" >៧</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN08.html')" >៨</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN09.html')" >៩</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN10.html')" >១០</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN11.html')" >១១</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN12.html')" >១២</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN13.html')" >១៣</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN14.html')" >១៤</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN15.html')" >១៥</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN16.html')" >១៦</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN17.html')" >១៧</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN18.html')" >១៨</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN19.html')" >១៩</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN20.html')" >២០</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN21.html')" >២១</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN22.html')" >២២</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN23.html')" >២៣</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN24.html')" >២៤</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN25.html')" >២៥</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN26.html')" >២៦</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN27.html')" >២៧</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN28.html')" >២៨</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN29.html')" >២៩</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN30.html')" >៣០</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN31.html')" >៣១</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN32.html')" >៣២</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN33.html')" >៣៣</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN34.html')" >៣៤</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN35.html')" >៣៥</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN36.html')" >៣៦</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN37.html')" >៣៧</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN38.html')" >៣៨</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN39.html')" >៣៩</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN40.html')" >៤០</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN41.html')" >៤១</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN42.html')" >៤២</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN43.html')" >៤៣</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN44.html')" >៤៤</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN45.html')" >៤៥</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN46.html')" >៤៦</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN47.html')" >៤៧</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN48.html')" >៤៨</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN49.html')" >៤៩</ons-button>
+<ons-button class="chapter" onclick="fn.navigate('GEN50.html')" >៥០</ons-button>
+      </ons-row>
+</ons-page>
+</ons-template>
+
+<ons-template id="settings.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Settings
+      </div>
+    </ons-toolbar>
+    <div class="settings">
+      <ons-row>
+        <ons-col id="smallA" style="text-align: left; font-size: 16pt;">A</ons-col>
+        <ons-col id="bigA" style="text-align: right; font-size: 30pt;">A</ons-col>
+      </ons-row>
+      <ons-row>
+        <ons-col>
+          <ons-range id="fontRange" style="width: 100%;" min="16" max="30" step="2" onclick="fn.changeFontSize()"></ons-range>
+        </ons-col>
+      </ons-row>
+    </div>
+  </ons-page>
+  </ons-template>
+
+  <ons-template id="about.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        About
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+
+</body>
+</html>
+
+<!-- Localized -->

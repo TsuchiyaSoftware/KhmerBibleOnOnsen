@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data:; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <ons-navigator id="myNav" page="home.html"></ons-navigator>
+  <ons-splitter>
+    <ons-splitter-side id="menu" side="left" width="220px" collapse swipeable>
+      <ons-page>
+        <ons-list>
+          <ons-list-item onclick="fn.load('home.html')" tappable>
+            Home
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('settings.html')" tappable>
+            Settings
+          </ons-list-item>
+          <ons-list-item onclick="fn.load('about.html')" tappable>
+            About
+          </ons-list-item>
+        </ons-list>
+      </ons-page>
+    </ons-splitter-side>
+    <ons-splitter-content id="content" page="home.html"></ons-splitter-content>
+  </ons-splitter>
+
+  <ons-template id="home.html">
+    <ons-page id="home-page">
+      <ons-toolbar>
+        <div class="left">
+          <ons-toolbar-button onclick="fn.open()">
+            <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+          </ons-toolbar-button>
+        </div>
+        <div class="center">
+          KhmerBible
+        </div>
+      </ons-toolbar>
+      <p id ="hebrew">
+        បទគម្ពីរគ្រិស្ដសាសនិកជាភាសាហេប្រឺ
+      </p>
+      <ons-row>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="GEN" onclick="fn.navigate('GEN.html')" >លោកុប្បត្តិ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="EXO">និក្ខមនំ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="LEV">លេវីវិន័យ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="NUM">ជនគណនា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="DEU">ចោទិយកថា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JOS">យ៉ូស្វេ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JDG">ចៅហ្វាយ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="RUT">នាង​រស់</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1SA">១ សាំយូអែល</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2SA">២ សាំយូអែល</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1KI">១ ពង្សាវតារក្សត្រ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2KI">២ ពង្សាវតារក្សត្រ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1CH">១ របាក្សត្រ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2CH">២ របាក្សត្រ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="EZR">អែសរ៉ា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="NEH">នេហេមា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="EST">នាង​អេសធើរ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JOB">យ៉ូប</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="PSA">ទំនុកតម្កើង</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="PRO">សុភាសិត</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ECC">សាស្តា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="SNG">បទ​ចំរៀង</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ISA">អេសាយ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JER">យេរេមា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="LAM">បរិទេវ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="EZK">អេសេគាល</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="DAN">ដានីយ៉ែល</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="HOS">ហូសេ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JOL">យ៉ូអែល</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="AMO">អេម៉ុស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="OBA">អូបាឌា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JON">យ៉ូណាស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="MIC">មីកា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="NAM">ណាហ៊ូម</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="HAB">ហាបាគូក</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ZEP">សេផានា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="HAG">ហាកាយ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ZEC">សាការី</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="MAL">ម៉ាឡាគី</ons-button></ons-col> 
+      </ons-row>
+      <p is="greece">
+        បទគម្ពីរគ្រិស្ដសាសនិកជាភាសាក្រិច  
+      </p>
+      <ons-row>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="MAT">ម៉ាថាយ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="MRK">ម៉ាកុស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="LUK">លូកា</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JHN">យ៉ូហាន</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ACT">កិច្ចការ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="ROM">រ៉ូម</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1CO">១ កូរិនថូស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2CO">២ កូរិនថូស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="GAL">កាឡាទី</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="EPH">អេភេសូ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="PHP">ភីលីព</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="COL">កូឡូស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1TH">១​ថែស្សាឡូនីច</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2TH">២​ថែស្សាឡូនីច</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1TI">១ ធីម៉ូថេ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2TI">២ ធីម៉ូថេ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="TIT">ទីតុស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="PHM">ភីលេម៉ូន</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="HEB">ហេព្រើរ</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JAS">យ៉ាកុប</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1PE">១ ពេត្រុស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2PE">២ ពេត្រុស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="1JN">១ យ៉ូហាន</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="2JN">២ យ៉ូហាន</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="3JN">៣ យ៉ូហាន</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="JUD">យូដាស</ons-button></ons-col>
+        <ons-col width="19.5%" class="books"><ons-button class="name" modifier="large" id="REV">វិវរណៈ</ons-button></ons-col>
+      </ons-row>
+
+    </ons-page>
+  </ons-template>
+
+  <ons-template id="settings.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        Settings
+      </div>
+    </ons-toolbar>
+    <div class="settings">
+      <ons-row>
+        <ons-col id="smallA" style="text-align: left; font-size: 16pt;">A</ons-col>
+        <ons-col id="bigA" style="text-align: right; font-size: 30pt;">A</ons-col>
+      </ons-row>
+      <ons-row>
+        <ons-col>
+          <ons-range id="fontRange" style="width: 100%;" min="16" max="30" step="2" onclick="fn.changeFontSize()"></ons-range>
+        </ons-col>
+      </ons-row>
+    </div>
+  </ons-page>
+  </ons-template>
+
+  <ons-template id="about.html">
+  <ons-page>
+    <ons-toolbar>
+      <div class="left">
+        <ons-toolbar-button onclick="fn.open()">
+          <ons-icon icon="ion-navicon, material:md-menu"></ons-icon>
+        </ons-toolbar-button>
+      </div>
+      <div class="center">
+        About
+      </div>
+    </ons-toolbar>
+  </ons-page>
+  </ons-template>
+
+</body>
+</html>

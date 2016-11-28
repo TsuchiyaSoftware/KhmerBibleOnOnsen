@@ -1,0 +1,32 @@
+/**/
+@font-face {
+  font-family: 'Battambang';
+  src: url('fonts/Battambang-Regular.ttf') format('truetype');
+}
+body {
+    font-family: 'Battambang';
+}
+
+.name {
+    font-family: 'Battambang';
+    font-size: 1.0em;
+}
+.books {
+    margin: 1px;
+    padding: 1px;
+}
+.new.books{
+    
+}
+.chapter {
+    width: calc(100vmin/12);
+    height: calc(100vmin/12);    
+    text-align: center;
+    line-height: calc(100vmin/12);
+    margin: 1px;
+    padding: 1px;
+}
+.settings {
+    width: 80%;
+    margin: 0 auto;
+}
